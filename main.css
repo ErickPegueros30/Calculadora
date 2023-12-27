@@ -10,57 +10,69 @@ body {
     background-color: #515151;
     display: grid;
     place-items: center;
-}
-
-.calculadora {
-    background-color: #666666;
-    color: white;
-    width: 350px;
-    max-width: 100%;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: .5rem;
-}
-
-.pantalla {
-    grid-column: 1 / -1;
-    background-color: #b5b5b5;
-    padding: 1.5rem;
-    font-size: 5rem;
-    text-align: right;
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-    font-family: monospace;
-    font-weight: 600;
-}
-
-.btn {
-    background-color: #15173c;;
-    color: white;
-    border: 0;
-    padding: 1.5rem .5rem;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: .5rem;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.pantalla {
+    grid-column: span 4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    grid-column: span 1;
+    padding: 10px;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #090c31;
+.btnfuncion {
+    grid-column: span 1;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #ccc;
 }
 
-#cero {
+.movimiento {
+    grid-column: span 1;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.funciones {
     grid-column: span 2;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #ccc;
 }
 
-#igual {
-    grid-row: span 2;
-    background-color: #e6394a;
+.btnacciones {
+    grid-column: span 1;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #ccc;
 }
 
-#igual:hover {
-    background-color: #e65766;
-}
+/* Agrega cualquier estilo adicional según tus preferencias */
+
