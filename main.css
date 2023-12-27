@@ -8,71 +8,95 @@
 body {
     min-height: 100vh;
     background-color: #515151;
-    display: grid;
-    place-items: center;
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .calculadora {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    background-color: #333333;
+    color: white;
+    width: 300px;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
     max-width: 400px;
     margin: auto;
     text-align: center;
 }
 
 .pantalla {
-    grid-column: span 4;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    width: 100%;
+    background-color: #b5b5b5;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
 }
 
-.btn {
-    grid-column: span 1;
-    padding: 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-.btnfuncion {
-    grid-column: span 1;
-    padding: 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    background-color: #ccc;
-}
-
-.movimiento {
-    grid-column: span 1;
-    padding: 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    background-color: #ccc;
-}
-
-.funciones {
-    grid-column: span 2;
-    padding: 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    background-color: #ccc;
-}
-
+.btn,
+.btnfuncion,
+.movimiento,
+.funciones,
 .btnacciones {
-    grid-column: span 1;
-    padding: 10px;
-    font-size: 1.2em;
+    background-color: #15173c;
+    color: white;
+    border: 1px solid #000;
+    padding: 1rem;
+    flex: 0 0 calc(25% - 10px);
+    border-radius: 5px;
     cursor: pointer;
-    background-color: #ccc;
+    transition: background-color 0.3s;
 }
 
-/* Agrega cualquier estilo adicional según tus preferencias */
+.btn:hover {
+    background-color: #090c31;
+}
 
+.btnfuncion,
+.funciones {
+    font-size: 0.9em;
+    padding: 0.75rem;
+    flex: 0 0 calc(33.33% - 10px); /* Distribuye en 3 columnas */
+}
+
+#cero {
+    flex: 0 0 calc(50% - 10px);
+}
+
+#igual {
+    flex: 0 0 calc(50% - 10px);
+}
+
+#alpha,
+#shift {
+    flex: 0 0 calc(50% - 10px);
+}
+
+#arriba {
+    flex: 0 0 calc(33.33% - 10px);
+    
+}
+
+#abajo {
+    flex: 0 0 calc(33.33% - 10px);
+}
+
+#izquierda {
+    flex: 0 0 calc(33.33% - 10px);
+}
+
+#derecha {
+    flex: 0 0 calc(33.33% - 10px);
+}
+
+#mode {
+    flex: 0 0 calc(33.33% - 10px);
+}
